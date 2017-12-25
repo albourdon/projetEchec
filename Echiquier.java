@@ -38,5 +38,22 @@ public class Echiquier {
 	public void setTabCases(Case[] tabCases) {
 		this.tabCases = tabCases;
 	}
+
+	/**
+	 * Création de l'échiquier
+	 */
+	public  void  creerEchiquier(){
+		int i=0;
+		for (int k = 0; k < tabV.length; k++) {
+			for (int j = 0; j <tabH.length; j++) {
+				//System.out.print("cases i "+i+" h "+tabH[j]+" v "+tabV[k]);
+				this.tabCases[i]=new Case();
+				this.tabCases[i].setAbscisse(tabH[j]);
+				this.tabCases[i].setOrdonnee(tabV[k]);
+				i++;
+			}
+		}
+
+	}
 	
 }
