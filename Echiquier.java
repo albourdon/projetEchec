@@ -22,7 +22,7 @@ public class Echiquier {
 	 * 
 	 */
 	public Echiquier() {
-		tabCases = new Case[8];
+		tabCases = new Case[64];
 	}
 	/**
 	 * 
