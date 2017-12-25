@@ -10,6 +10,7 @@ public class Case {
 
 	int ordonnee;
 
+	Piece unePiece;	
 
 	public Case() {
 	}
@@ -50,5 +51,15 @@ public class Case {
 	public void setOrdonnee(int ordonnee) {
 		this.ordonnee = ordonnee;
 	}
-
+	
+	public Piece getUnePiece() {
+		return unePiece;
+	}
+	/**
+	 * 
+	 * @param unePiece
+	 */
+	public void setUnePiece(Piece unePiece) {
+		this.unePiece = unePiece;
+	}
 }
