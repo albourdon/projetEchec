@@ -55,5 +55,15 @@ public class Echiquier {
 		}
 
 	}
-	
+	/**
+	 * Dupliquer un échiquier
+	 */
+	public  Echiquier  dupliqueEchiquier(){
+		Echiquier cloneEchiquier = new Echiquier();
+		for (int i = 0; i < tabCases.length; i++) {
+			cloneEchiquier.tabCases[i] = tabCases[i].clone();
+		}
+		return cloneEchiquier;
+	}
+
 }
